@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TP Javascript / DOM</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+
+	<main>
+		<h1><span class="lighter">Manage</span> <span class="bolder">Employees</span></h1>
+		<button id="buttonAddNewEmployee" class="botonVerde">
+			<i class="material-icons">&#xE147;</i>
+			<p>Add New Employee</p>
+		</button>
+	</main>
+
+	<div id="newEmployeeModal" class="modal"></div>
+	<div id="editUserModal" class="modal"></div>
+	<div id="deleteUserModal" class="modal"></div>
+	
+	<section id="container">
+		<div>
+			<form action="" method="get" class="formFilter">
+				<input type="text" value="" placeholder="Filter..." class="inputFilter">
+				<input type="submit" value="Filtrar" id="filtrar" class="botonVerde">
+			</form>
+		</div>
+
+		<div class="tableContainer">
+			<table>
+
+				<thead>
+					<tr class="firstRow">
+						<th class="firstCell">
+							<label class="checkboxContainer">
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</th>
+						<th class="smallCell">Name</th>
+						<th class="bigCell">Email</th>
+						<th class="smallCell">Address</th>
+						<th class="smallCell">Phone</th>
+						<th class="lastCell">Actions</th>
+					</tr>
+				</thead>
+
+				<tbody id="tableBody">
+					<tr></tr>
+				</tbody>
+
+			</table>
+		</div>
+
+	</section>
+
+
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
